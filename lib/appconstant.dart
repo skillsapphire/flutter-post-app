@@ -4,4 +4,4 @@ const appColor = Colors.teal;
 const appFontSize = 18.0;
 const appFontFamily = "Montserrat";
 
-const apiBaseUrl = "http://odishainfo.skillsapphire.com/wp-json/wp/v2";
+const apiBaseUrl = "http://odisha.moassist.in/wp-json/wp/v2";

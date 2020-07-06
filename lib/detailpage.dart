@@ -3,9 +3,9 @@ import 'appconstant.dart';
 
 class DetailPage extends StatelessWidget {
 
-  final post;
+  final listing;
 
-  const DetailPage({Key key, @required this.post}) : super(key: key);
+  const DetailPage({Key key, @required this.listing}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          title: Text(post["title"]),
+          title: Text(listing["listingtitle"]),
           elevation: 0.0,
         ),
         body: Center(
@@ -25,13 +25,13 @@ class DetailPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Hero(
-                  tag: post["id"],
+                  tag: listing["id"],
                   child: CircleAvatar(
                     radius: 100.0,
                     backgroundImage: NetworkImage("https://jssors8.azureedge.net/demos/img/gallery/720x480/006.jpg")),
               ),
               SizedBox(height: 10.0,),
-              Text("Post Id: ${post["id"]}",
+              Text("Post Id: ${listing["id"]}",
                   style: TextStyle(
                     fontSize: appFontSize,
                     color: Colors.white,
@@ -40,7 +40,7 @@ class DetailPage extends StatelessWidget {
               SizedBox(height: 10.0,),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("${post["title"]}",
+                child: Text("${listing["listingtitle"]}",
                     style: TextStyle(
                       fontSize: appFontSize,
                       color: Colors.white,
@@ -50,7 +50,7 @@ class DetailPage extends StatelessWidget {
               SizedBox(height: 10.0,),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("${post["body"]}",
+                child: Text("${listing["listingdescription"]}",
                     style: TextStyle(
                       //fontSize: 22.0,
                       color: Colors.white,

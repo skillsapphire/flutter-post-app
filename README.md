@@ -28,9 +28,14 @@ http://odisha.moassist.in/wp-json/wp/v2/
 http://odisha.moassist.in/wp-json/wp/v2/news?per_page=10&search=cc
 http://odisha.moassist.in/wp-json/wp/v2/listingcategory/
 http://odisha.moassist.in/wp-json/wp/v2/listingcategory/?parent=7
+http://odisha.moassist.in/wp-json/wp/v2/listing?listingcategory=6
 http://examples.com/wp-json/wp/v2/posts?categories=1&per_page=30&order=asc&search=hello
 https://wordpress.stackexchange.com/questions/248760/wp-rest-api-v2-posts-filter-by-search-category-name-not-working
 https://make.wordpress.org/core/2019/10/10/filtering-nested-rest-response-_fields-in-wp-5-3/
 http://odisha.moassist.in/wp-json/wp/v2/news?_fields=id,title,newsdescription
 http://odisha.moassist.in/wp-json/wp/v2/news?_fields=id,newsdescription&search=cc
+
+https://github.com/WP-API/rest-filter/blob/master/plugin.php
+http://www.sbpyp.com/site/index.php
+
 

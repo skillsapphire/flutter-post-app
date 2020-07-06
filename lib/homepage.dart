@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget{
 class _HomePageState extends State<HomePage> {
 
   //var apiEndpoint = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic";
-  var apiUrl = "https://jsonplaceholder.typicode.com/posts";
+  //var apiUrl = "https://jsonplaceholder.typicode.com/posts";
   var apiRes, posts;
 
   @override
@@ -25,15 +25,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   getDataFromAPI() async{
-    apiRes = await http.get(apiUrl);
+    apiRes = await http.get(apiBaseUrl+"/");
     //print(apiRes.body);// this is as string response, so it has to be converted to json
     posts = jsonDecode(apiRes.body);
     //print(posts);
     setState(() {
       
     });
-
-
   }
 
   @override
@@ -46,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           centerTitle: true,
-          title: Text("Post App"),
+          title: Text("Listing App"),
           elevation: 0.0,
           backgroundColor: Colors.transparent,
         ),
@@ -64,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                 child: CircleAvatar(backgroundImage: NetworkImage("https://jssors8.azureedge.net/demos/img/gallery/720x480/006.jpg"))),
                 title: Text("${post["title"]}",
                   style: TextStyle(
-                    fontSize: 22.0,
+                    fontSize: appFontSize,
                     color: Colors.white,
                   ),
                 ),

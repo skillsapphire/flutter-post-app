@@ -33,7 +33,7 @@ class DetailPage extends StatelessWidget {
               SizedBox(height: 10.0,),
               Text("Post Id: ${post["id"]}",
                   style: TextStyle(
-                    fontSize: 22.0,
+                    fontSize: appFontSize,
                     color: Colors.white,
                   ),
               ),
@@ -42,7 +42,7 @@ class DetailPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text("${post["title"]}",
                     style: TextStyle(
-                      fontSize: 22.0,
+                      fontSize: appFontSize,
                       color: Colors.white,
                     ),
                 ),

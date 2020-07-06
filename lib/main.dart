@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Post App",
+      title: "Listing App",
       theme: ThemeData(
         primarySwatch: appColor,
-        fontFamily: "Pacifico",
+        fontFamily: appFontFamily,
       ),
       home: HomePage(),
     );
